@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Formulario Tarea 2 Ingenieria Web</title>
+      <script type="text/javascript" src="js/index.js"> </script>
+      <link rel="stylesheet" href="css/index.css">
+      <script> window.addEventListener("load", start); </script>
+   </head>
+   <body >
+      <div>
+         <form id="formulario" method="post">
+            <input type="text" name="nombre" placeholder="Nombre" required="true">
+            <input type="text" name="apellido" placeholder="Apellido" required="true">
+            <input type="text" name="rut" placeholder="RUT sin puntos y con guión" required="true">
+            <input type="email" name="email" placeholder="Correo Electrónico" required="true">
+            <input type="number" name="telefono" placeholder="Numero de Teléfono" required="true">
+            <div class="item">
+               Seleccione 1 o mas lenguajes de programacion de su interes:<br>
+               <input type="checkbox" name="lang" value="python"><label>Python</label><br>
+               <input type="checkbox" name="lang" value="java"><label>Java</label><br>
+               <input type="checkbox" name="lang" value="ts"><label>Typescript</label><br>
+               <input type="checkbox" name="lang" value="php"><label>PHP</label><br>
+               <input type="checkbox" name="lang" value="cs"><label>C#</label><br>
+               <input type="checkbox" name="lang" value="cpp"><label>C++</label><br>
+            </div>
+            <div class="item">
+               <label for="nivel">Nivel de conocimiento en programacion </label>
+               <input type="range" id="nivel" name="nivel" min="0" max="10">
+            </div>
+            <div class="item">
+               Años de experiencia laboral: <br>
+               <input type="radio" id="exp1" name="exp" value="1">
+               <label for="exp1">1</label>
+               <input type="radio" id="exp2" name="exp" value="2">
+               <label for="exp2">2</label>
+               <input type="radio" id="exp3" name="exp" value="3">
+               <label for="exp3">3</label>
+               <input type="radio" id="exp4" name="exp" value="4">
+               <label for="exp4">4</label>
+               <input type="radio" id="exp5" name="exp" value="5">
+               <label for="exp5">5</label>
+            </div>
+            <div>
+               Breve Descripcion de Usted: <br>
+               <textarea name="descripcion"></textarea>
+            </div>
+            <button id="limpiar">Limpiar Datos</button>
+            <input type="submit" value="Enviar Datos">
+         </form>
+         <h1 id="msg" style="display:none">Hemos recibido sus datos, pronto nos estremos comunicando con usted</h1>
+      </div>
+   </body>
+</html>
